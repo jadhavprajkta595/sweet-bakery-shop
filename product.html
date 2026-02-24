@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Cravings | Our Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Our Delicious Treats 🍰</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card bakery-card">
+                <img src="assests/Cake.jpeg" class="card-img-top" alt="Strawberry Cake">
+                <div class="card-body">
+                    <h5 class="card-title">Cake: Strawberry</h5>
+                    <p class="card-description">Delicious fresh strawberry cake topped with creamy frosting.</p>
+                    <h5 class="price">₹250</h5>
+                    <button class="btn bakery-btn" onclick="orderProduct('Cake: Strawberry', 250, 'images/cake.jpeg')">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card bakery-card">
+                <img src="assests/donut.jpeg" class="card-img-top" alt="Chocolate Donut">
+                <div class="card-body">
+                    <h5 class="card-title">Donut: Chocolate</h5>
+                    <p class="card-description">Soft donut glazed with rich chocolate and colorful sprinkles.</p>
+                    <h5 class="price">₹100</h5>
+                    <button class="btn bakery-btn" onclick="orderProduct('Donut: Chocolate', 100, 'images/donut.jpeg')">Order Now</button>
+                </div>
+            </div>
+        </div>
+  <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card bakery-card">
+                <img src="assests/cupcake.jpeg" class="card-img-top" alt="Eggless Cupcake">
+                <div class="card-body">
+                    <h5 class="card-title">Cupcake: Eggless</h5>
+                    <p class="card-description">Eggless mocha cupcake with soft, moist texture and rich coffee-chocolate flavor.</p>
+                    <h5 class="price">₹220</h5>
+                    <button class="btn bakery-btn" onclick="orderProduct('Cupcake: Eggless', 220, 'images/cupcake.jpeg')">Order Now</button>
+                </div>
+            </div>
+        </div>
+ <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card bakery-card">
+                <img src="assests/red velvet.jpeg" class="card-img-top" alt="Red Velvet Pastry">
+                <div class="card-body">
+                    <h5 class="card-title">Pastry: Red Velvet</h5>
+                    <p class="card-description">Soft red velvet pastry layered with smooth cream, rich flavor, melt-in-the-mouth.</p>
+                    <h5 class="price">₹80</h5>
+                    <button class="btn bakery-btn" onclick="orderProduct('Pastry: Red Velvet', 80, 'images/redvelvet.jpeg')">Order Now</button>
+                </div>
+            </div>
+        </div>
+             <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card bakery-card">
+                <img src="assests/Walnut-Brownie.jpeg" class="card-img-top" alt="Walnut Brownie">
+                <div class="card-body">
+                    <h5 class="card-title">Brownie: Walnut</h5>
+                    <p class="card-description">Rich Walnut-Brownie loaded with crunchy walnuts, perfect balance of sweetness and nutty flavor.</p>
+                    <h5 class="price">₹110</h5>
+                    <button class="btn bakery-btn" onclick="orderProduct('Brownie: Walnut', 110, 'images/walnutbrownie.jpeg')">Order Now</button>
+                </div>
+            </div>
+        </div>
+ <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card bakery-card">
+                <img src="assests/Butter Cookies.jpeg" class="card-img-top" alt="Butter Cookies">
+                <div class="card-body">
+                    <h5 class="card-title">Cookies: Butter</h5>
+                    <p class="card-description">Classic butter cookies with rich, melt-in-the-mouth texture and delicate sweetness.</p>
+                    <h5 class="price">₹110</h5>
+                    <button class="btn bakery-btn" onclick="orderProduct('Cookies: Butter', 110, 'images/buttercookies.jpeg')">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function orderProduct(name, price, img){
+    const url = `order.html?product=${encodeURIComponent(name)}&price=${price}&img=${encodeURIComponent(img)}`;
+    window.location.href = url;
+}
+</script>
+
+</body>
+</html>

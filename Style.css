@@ -1,0 +1,574 @@
+
+header {
+  background-color:#FADADD;
+  color: black;
+  text-align: center;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content:space-between;
+}
+header ul.nav {
+    display: flex;
+    gap: 15px; /* Space between links */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Style for the header links */
+header ul.nav li.nav-item a.nav-link {
+     color:black; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bold */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    
+    
+}
+
+/* Hover effect */
+
+header ul.nav li.nav-item a.nav-link.active,
+header ul.nav li.nav-item a.nav-link:hover {
+    color: #D94F70; /* Text color on hover */ 
+     text-decoration: none; /* Ensure no underline on hover */
+}
+header ul.nav li.nav-item a.nav-link.active {
+    color: #fff;  
+}
+
+
+/* Make carousel full width and responsive */
+#carouselExampleFade {
+    width: 100%;
+    max-height: 600px; /* Set a max height for better layout */
+    overflow: hidden;
+}
+
+/* Make carousel images fully fit within the carousel */
+#carouselExampleFade .carousel-item img {
+    width: 100%;       /* Full width */
+    height: 600px;     /* Fixed height to match carousel */
+    object-fit: cover; /* Cover ensures no distortion, crops if needed */
+}
+
+/* Optional: make carousel responsive on smaller screens */
+@media (max-width: 768px) {
+    #carouselExampleFade .carousel-item img {
+        height: 500px; /* Smaller height on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    #carouselExampleFade .carousel-item img {
+        height: 450px; /* Very small height on tiny screens */
+    }
+}
+.bakery-footer {
+    background-color: #FFF5E1;  /* Creamy light color */
+    color: #4B2E2E;             /* Chocolate brown text */
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.05); /* subtle shadow */
+}
+
+.bakery-footer {
+    background-color: #fff7f2;
+    text-align: center;
+    padding: 20px 10px;   /* controls height */
+    margin-top: 20px;     /* space below hero section */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Top part of footer */
+.footer-top h2 {
+    color: #d35400;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.footer-top p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Bottom part of footer */
+.footer-bottom p {
+    font-size: 14px;
+    color: #333;
+}
+body {
+    background: #FFF1E6;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #FFEDE0; /* soft bakery cream background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading */
+h2 {
+    color: #6B3E26; /* chocolate brown */
+    font-weight: 700;
+}
+
+/* Card */
+.bakery-card {
+    background-color: #FFF8E7; /* light cream */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bakery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* Card Image */
+.bakery-card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/* Product Title */
+.card-title {
+    font-weight: 700;
+    color: #6B3E26;
+    margin-bottom: 8px;
+}
+
+/* Description */
+.card-description {
+    font-size: 14px;
+    color: #5a4d3b;
+    margin-bottom: 12px;
+}
+
+/* Price */
+.price {
+    font-weight: bold;
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.bakery-btn {
+    background-color: #F7D6D6; /* soft pink */
+    color: #6B3E26;
+    font-weight: 600;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.bakery-btn:hover {
+    background-color: #EAB0B0;
+    color: #4B2E1B;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bakery-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bakery-card img {
+        height: 150px;
+    }
+}
+
+
+
+/* Body */
+body {
+    background: #FFF1E6;  /* Light bakery cream background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper */
+.order-wrapper {
+    max-width: 450px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.order-wrapper h2 {
+    text-align: center;
+    color: #6B3E26;  /* Chocolate-brown color */
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+
+
+/* Labels */
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 12px;
+    color: #333;
+}
+
+/* Inputs & Selects */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #E0CFC2;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+    border-color: #C44536;
+    box-shadow: 0 0 5px rgba(196,69,54,0.3);
+    outline: none;
+}
+
+/* Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    background: #C44536;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #A7372B;
+}
+
+/* Total price input special */
+#total {
+    font-weight: bold;
+    color: #C44536;
+    background: #FFF4F0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .order-wrapper {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Page Background */
+body {
+    background-color: #fff7f2;
+}
+
+/* Main Section */
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Heading */
+.contact-section h1 {
+    font-size: 36px;
+    color: #3a3a3a;
+}
+
+.tagline {
+    margin-top: 10px;
+    color: #666;
+    font-size: 15px;
+}
+
+/* Contact Box Container */
+.contact-container {
+    max-width: 700px;          /* Proper box width */
+    margin: 40px auto;         /* Centered */
+}
+
+/* Contact Info Box */
+.contact-info {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.contact-info h2 {
+    color: #d35400;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Info Text */
+.contact-info p {
+    margin: 14px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Strong text */
+.contact-info strong {
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        max-width: 90%;
+    }
+
+    .contact-info {
+        padding: 25px;
+    }
+}
+.center-link {
+    height: 0vh;                /* full screen height */
+    display: flex;
+    justify-content: center;      /* horizontal center */
+    align-items: center;          /* vertical center */
+    text-align: center;
+}
+
+.center-link a {
+    font-size: 18px;
+    color: #0066ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.center-link a:hover {
+    text-decoration: underline;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #fff7f2;
+}
+
+/* Section layout */
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Content box */
+.about-box {
+    max-width: 700px;
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border: 1px solid #f0e5de;
+}
+
+/* Heading */
+.about-box h1 {
+    font-size: 32px;
+    color: #d35400;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.about-box p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Contact button */
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #d35400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #b84300;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .about-box {
+        padding: 25px 20px;
+    }
+
+    .about-box h1 {
+        font-size: 26px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #fff7f2;
+}
+
+/* Section layout */
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Content box */
+.about-box {
+    max-width: 700px;
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    border: 1px solid #f0e5de;
+}
+
+/* Top Image (Logo) */
+.top-image {
+    width: 120px;       /* small size */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Heading */
+.about-box h1 {
+    font-size: 28px;
+    color: #d35400;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.about-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+/* Row of small images */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.small-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact button */
+.contact-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background-color: #d35400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #b84300;
+    transform: scale(1.05);
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+    .about-box {
+        padding: 25px 20px;
+    }
+
+    .about-box h1 {
+        font-size: 24px;
+    }
+
+    .small-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .top-image {
+        width: 100px;
+    }
+}
